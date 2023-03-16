@@ -18,6 +18,7 @@
   --spacing-margin-l: 16rem;
 
   /* color vars */
+  --dark-grey: #212529;
   --grey: #343a40;
   --light-gray: #495057;
   --main: #1c7ed6;
@@ -143,16 +144,20 @@ body {
 /* ******* */
 
 .sidebar {
-  background-color: var(--grey);
+  background-color: var(--dark-grey);
   grid-row: 1/-1;
+  padding: var(--spacing-8) var(--spacing-2);
+}
+.sidebar-wrapper {
+  background-color: #212529;
+  border-radius: 11px;
   display: flex;
   justify-content: top;
   flex-direction: column;
-  padding: var(--spacing-8) var(--spacing-2);
 }
 
 .sidebar button {
-  background-color: var(--background-highlight);
+  background-color: #212529;
   margin: var(--spacing-6) 0;
   border-radius: 50%;
   border: none;
@@ -174,7 +179,7 @@ body {
   width: var(--size-8);
   border-radius: 50%;
   stroke-width: 1;
-  color: black;
+  color: #fff;
 }
 /* **************** */
 /* Movie container  */
@@ -208,7 +213,7 @@ body {
 
 .movie-list {
   grid-column: 1/-1;
-  background-color: var(--light-gray);
+  background-color: var(--dark-grey);
 }
 
 .table-container {

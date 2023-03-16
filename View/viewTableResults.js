@@ -45,6 +45,7 @@ class TableResults {
       background-size: cover;
       color: var(--background-highlight);
       transition: all 0.3s;
+      cursor:pointer;
     "
     data-index=${index}
   >

@@ -61,35 +61,3 @@ export const resultsNumberShift = function (value) {
   let partialArr = state.searchQuery.results.slice(0, value - 1);
   return partialArr;
 };
-
-// const data = await getJSON(
-//   "https://api.themoviedb.org/3/discover/movie?api_key=31d2d0bec216e6dec20d7555d48b5074&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2&with_watch_monetization_types=flatrate"
-// );
-
-// const getGenreResults = async function (id) {
-//   try {
-//     const genre = id;
-//     const data = await getJSON(
-//       `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=${genre}&with_watch_monetization_types=flatrate`
-//     );
-//     return console.log(data);
-//   } catch (err) {
-//     alert(err);
-//   }
-// };
-
-// const genreIds = async function () {
-//   try {
-//     const data = await getJSON(
-//       `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`
-//     );
-//     const arr = data;
-//     let genreObj = {};
-//     arr["genres"].forEach((el) => {
-//       genreObj[el.id] = el.name;
-//     });
-//     return genreObj;
-//   } catch (err) {
-//     alert(err);
-//   }
-// };
